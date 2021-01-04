@@ -48,11 +48,11 @@ function App() {
           <Text style={styles.subheadDescription}>
             A repository contains all project files, including the revision
             history. Already have a project repository elsewhere?{" "}
-            <CustomLink href="#" value="Import a repository." />
+            <CustomLink href="#">Import a repository.</CustomLink>
           </Text>
         </View>
         {/* owner */}
-        <View style={{ flexDirection: "row", zIndex:99 }}>
+        <View style={{ flexDirection: "row", zIndex: 99 }}>
           {/* owner */}
           <View>
             <Text style={styles.ownRepo}>
@@ -64,7 +64,7 @@ function App() {
                 setIsOpen={() => {
                   setIsOpen(!isOpen);
                 }}
-                values={["user1asdf", "user2qwer","asdfasf"]}
+                values={["user1asdf", "user2qwer", "asdfasf"]}
               />
             </View>
           </View>
@@ -206,7 +206,7 @@ function App() {
               <View style={{ width: 20 }} />
               <Text style={styles.textSecond}>
                 This is where you can write a long description for your project.{" "}
-                <CustomLink href="#" value="Lean more." />
+                <CustomLink href="#">Learn More.</CustomLink>
               </Text>
             </View>
           </View>
@@ -234,7 +234,7 @@ function App() {
               <View style={{ width: 20 }} />
               <Text style={styles.textSecond}>
                 Choose which files not to track from a list of templates.{" "}
-                <CustomLink href="#" value="Lean more." />
+                <CustomLink href="#">Learn More.</CustomLink>
               </Text>
             </View>
           </View>
@@ -262,7 +262,7 @@ function App() {
               <View style={{ width: 20 }} />
               <Text style={styles.textSecond}>
                 A license tells others what they can and can't do with your
-                code. <CustomLink href="#" value="Lean more." />
+                code. <CustomLink href="#">Learn More.</CustomLink>
               </Text>
             </View>
           </View>
@@ -271,8 +271,6 @@ function App() {
         <MouseOverButton
           mouseOverBackgroundColor={"#22863a"}
           backgroundColor={"#2ea44f"}
-          textStyle={{ fontWeight: "500", color: "white" }}
-          value={"Create repository"}
           style={{
             width: 170,
             height: 35,
@@ -280,7 +278,11 @@ function App() {
             borderWidth: 1,
             borderColor: "#d1d5da",
           }}
-        />
+        >
+          <Text style={{ fontWeight: "500", color: "white" }}>
+            Create repository
+          </Text>
+        </MouseOverButton>
         {/* <button style={{ width: 170, height: 35, backgroundColor: "#2ea44f" }}>
           <Text style={{ fontWeight: "500", color:"white" }}>Create repository</Text>
         </button> */}

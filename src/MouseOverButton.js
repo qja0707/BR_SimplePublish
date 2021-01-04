@@ -24,11 +24,7 @@ function MouseOverButton(props) {
           },
         ]}
       >
-        {props.value ? (
-          <Text style={props.textStyle}>{props.value}</Text>
-        ) : props.view ? (
-          props.view
-        ) : null}
+        {props.children}
       </TouchableOpacity>
     </div>
   );

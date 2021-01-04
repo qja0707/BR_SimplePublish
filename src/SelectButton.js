@@ -94,6 +94,7 @@ function SelectButton(props) {
                 }}
                 onPress={() => {
                   setSelectedValue(item);
+                  props.setIsOpen(false);
                 }}
               >
                 <Text style={{ color: optionText[index], paddingLeft: 10 }}>

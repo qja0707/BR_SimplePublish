@@ -15,7 +15,7 @@ function CustomLink(props) {
         setHrefStyle(textNone);
       }}
     >
-      {props.value}
+      {props.children}
     </a>
   );
 }
